@@ -6,4 +6,4 @@ import json
 
 def events_view(request):
 
-    return render(request, "home/events_home.html", {})
+    return render(request, "events/events_home.html", {})
