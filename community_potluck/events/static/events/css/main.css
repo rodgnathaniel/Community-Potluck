@@ -18,19 +18,43 @@ body {
     width: 70%;
     height: 10%;
     margin-left: 15%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 10px 0 rgba(	72,209,204,.6);
     border-radius: 11px 11px 0px 0px;
     text-align: center;
     padding-top: .04%;
+    color: beige;
 }
 
 #nav_bar{
+    position: -webkit-sticky;
+    position: sticky;
     width: 70%;
     height: 10%;
     margin-left: 15%;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 10px 0 rgba(	72,209,204,.6);
     border-radius: 0px 0px 11px 11px;
-    
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+
+}
+#nav_bar button{
+    width: 22%;
+    height: 15%;
+    margin-left: 8.5%;
+}
+
+#content_home{
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 10px 0 rgba(	72,209,204,.6);
+    border-radius: 0px 0px 11px 11px;
+    z-index: 1;
+
 }
 
 
