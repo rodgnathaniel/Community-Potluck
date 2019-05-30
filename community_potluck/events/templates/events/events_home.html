@@ -7,421 +7,334 @@
 
         </head>
         
-            <main>
+            <!-- <main> -->
 
                 <header>
-                        <div id="nav_title">
-                            <img id="self"src="{% static 'home/self.jpg' %}" height="90" width="140">
-                            <h1 id="name">Nathaniel Thomas Rodgers</h1>
-                            <h2 id="dev">Web Developer <br/>Portland, Oregon</h2>
-                            <a href="https://github.com/rodgnathaniel" target="_blank" id="git"><img src="{% static 'home/git.png' %}" width="45" height="45"></a>
-                            <a href="https://www.linkedin.com/in/nathaniel-rodgers-109104170/" target="_blank" id="in"><img src="{% static 'home/in.png' %}" width="45" height="45"></a>
-                            <div id="slideshow">
-                                <img name="slide" width="210" height="110">
-                            </div>
-                        </div>
-                </header>  
-
-        <!-- Main Navigation Bar -->
-                <div id="nav_bg">
-                    <div id="nav_btn">
-                        <button id="skills">Skills</button>
-                        <button id="contact">Contact</button>
-                        <button id="about">About Me</button>
+                    <div id="title_bar">
+                        <h1 id="title_bar_txt">Portland Potluck</h1>
                     </div>
+                </header>
 
-        <!-- Drop Down Menu For Portfolio Pieces -->
-                    <div id="skills_modal">
-                        <a id="dj" href="#"><img src="{% static 'home/django_.png' %}" width="115" height="60"></a>
-                        <a id="py" href="#"><img src="{% static 'home/python_logo.png' %}" width="55" height="55"></a>
-                        <a id="js" href="#"><img src="{% static 'home/js.png' %}" width="70" height="55"></a>
-                        <a id="node" href="#"><img src="{% static 'home/node.png' %}" width="85" height="65"></a>
-                        <a id="html_" href="#"><img src="{% static 'home/html.png' %}" width="65" height="50"></a>
-                    </div>
-
-        <!-- Contact Info Section -->
-                    <div id="contact_modal">
-                        <span id="contact_text">Feel free to contact me!</span>
-                        <img id="email_img" src="{% static 'home/email.png' %}" width="65" height="65">
-                        <span id="email">pdx@nathanielthomas.dev</span>
-                        <img id="phone_img" src="{% static 'home/phone.jpg' %}" width="65" height="65">
-                        <span id="phone">541.646.5895</span>
-                    </div>
-
-        <!-- Self Summary Section -->
-                    <div id="about_modal">
-                        <span>Hi, my name is Nathaniel; I am a certified software developer & Portland local. Currently proficient in Python, JavaScript, Django, HTML5, 
-                            and CSS for building full-stack applications. I have been fully immersed, continuously learning, strengthening my portfolio 
-                            everyday; I cannot wait to see what my future in the tech industry has to bring me.</br>I would define myself as a curious, mindful, 
-                            organized, and intuitive individual with an approachable, non judgmental personality.
-                        </span>
-                    </div>
-
-        <!-- Django Portfolio Section -->
-                    <div id="dj_modal">
-                        <a href="http://nathanielthomas.pythonanywhere.com/" target="_blank" >Constantine</a>
-                        <span>A full-stack puzzle game built using Django(Python 3.6 & JavaScript ES6). Incorporates speech recogntion API to control the game hands free if desired; includes login/logout system, 
-                            in-game mini games, and gives players the ability to save their game through JSON in database for later gameplay. 
-                        </span>
-                        <img name="constantine" width="370" height="250">
-                    </div>
-
-        <!-- Python Portfolio Section  -->
-                    <div id="py_modal">
-                        <a href="https://github.com/rodgnathaniel/Python/blob/master/python_solutions/farming_simulator.py" target="_blank">Python Farming Simulator</a>
-                        <span>A class based Python game where the user earns money from completing farming tasks while maintaining healthy levels of sleep and
-                            cleanliness to keep from loosing. The user can spend money on upgrading their farm as well as gambling it playing Black 
-                            Jack. The game runs inside of While True loop that calls the classes by giving String inputs. 
-                        </span>
-                        <img name="farm" width="350" height="250">
-
-                        <a href="#" target="_blank">Python Web Scraping</a>
-                        <span>Python web scraping program using HTTP request, Regex, and Beautiful Soup.
-                        </span>
-                        <img name="scrape" width="350" height="250">
-                    </div>
-
-        <!-- JavaScript Portfolio Section  -->
-                    <div id="js_modal">
-                        <a href="https://github.com/rodgnathaniel/JavaScript/blob/master/JavaScript_Solutions/atm.html" target="_blank">JavaScript ATM</a>
-                        <span>An ATM program made with JavaScript. Allows user to make deposits and withdrawals as well as keep track of 
-                            transaction history / interest.
-                        </span>
-                        <img name="atm" width="260" height="270">
-                    </div>
-
-        <!-- Node Portfolio Section  -->
-                    <div id="node_modal">
-                        <a href="https://github.com/rodgnathaniel/node_sms" target="_blank">Node SMS Messanger</a>
-                        <span>A Node app that allows users to enter in a phone number and easily send a message to given phone number. Utilizes socket.io
-                            and Nexmo API.
-                        </span>
-                        <img name="sms" width="400" height="240">
-                    </div>
-
-        <!-- HTML & CSS Portfolio Section  -->
-                    <div id="html_modal">
-                        <a href="https://github.com/rodgnathaniel/HTML-CSS/blob/master/html/css_solutions/pizza_time.html" target="_blank">Pizza Time Blog</a>
-                        <span>Example of a fictional blog named Pizza Time. Made with HTML5, styled with CSS.
-                        </span>
-                        <img name="pizza" width="370" height="250">
-                    </div>
-                    
+                <div id="nav_bar">
+                    <button>About</button>
+                    <button>Rules</button>
+                    <button>Contact</button>
                 </div>
-            </main>
+      
+            <!-- </main> -->
 
             <!-- JAVASCRIPT -->
             <script>
                 
-                //declaring buttons
-                let skills = document.querySelector("#skills");
-                let contact = document.querySelector("#contact");
-                let about = document.querySelector("#about");
-                let dj = document.querySelector("#dj");
-                let py = document.querySelector("#py");
-                let js = document.querySelector("#js");
-                let node = document.querySelector("#node");
-                let html_ = document.querySelector("#html_");
+                // //declaring buttons
+                // let skills = document.querySelector("#skills");
+                // let contact = document.querySelector("#contact");
+                // let about = document.querySelector("#about");
+                // let dj = document.querySelector("#dj");
+                // let py = document.querySelector("#py");
+                // let js = document.querySelector("#js");
+                // let node = document.querySelector("#node");
+                // let html_ = document.querySelector("#html_");
 
-                //declaring modals
-                let skills_modal = document.querySelector("#skills_modal"); 
-                let contact_modal = document.querySelector("#contact_modal");
-                let about_modal = document.querySelector("#about_modal"); 
-                let dj_modal = document.querySelector("#dj_modal"); 
-                let py_modal = document.querySelector("#py_modal"); 
-                let jd_modal = document.querySelector("#js_modal");
-                let node_modal = document.querySelector("#node_modal");
-                let html_modal = document.querySelector("#html_modal");
+                // //declaring modals
+                // let skills_modal = document.querySelector("#skills_modal"); 
+                // let contact_modal = document.querySelector("#contact_modal");
+                // let about_modal = document.querySelector("#about_modal"); 
+                // let dj_modal = document.querySelector("#dj_modal"); 
+                // let py_modal = document.querySelector("#py_modal"); 
+                // let jd_modal = document.querySelector("#js_modal");
+                // let node_modal = document.querySelector("#node_modal");
+                // let html_modal = document.querySelector("#html_modal");
 
-                let skillclick = false
+                // let skillclick = false
 
-                //open and closing modals with onclick funtions
-                skills.onclick = function(){
-                    if(skillclick){
-                        skills_modal.id = "skills_modal2"
-                        skillclick = false
-                        skills_modal.style.display = "none";
-                    } else {
-                        skills_modal.id = "skills_modal"
-                        skillclick = true
-                        skills_modal.style.display = "flex"; 
+                // //open and closing modals with onclick funtions
+                // skills.onclick = function(){
+                //     if(skillclick){
+                //         skills_modal.id = "skills_modal2"
+                //         skillclick = false
+                //         skills_modal.style.display = "none";
+                //     } else {
+                //         skills_modal.id = "skills_modal"
+                //         skillclick = true
+                //         skills_modal.style.display = "flex"; 
                         
-                    }
-                }
+                //     }
+                // }
 
-                contact.onclick = function(){
-                    skillclick = false
+                // contact.onclick = function(){
+                //     skillclick = false
 
-                    contact_modal.style.display = "flex";  
+                //     contact_modal.style.display = "flex";  
 
-                    skills_modal.style.display = "none";  
-                    about_modal.style.display = "none";  
-                    dj_modal.style.display = "none"; 
-                    py_modal.style.display = "none";  
-                    js_modal.style.display = "none";  
-                    node_modal.style.display = "none"; 
-                    html_modal.style.display = "none"; 
+                //     skills_modal.style.display = "none";  
+                //     about_modal.style.display = "none";  
+                //     dj_modal.style.display = "none"; 
+                //     py_modal.style.display = "none";  
+                //     js_modal.style.display = "none";  
+                //     node_modal.style.display = "none"; 
+                //     html_modal.style.display = "none"; 
                     
-                }
+                // }
 
-                about.onclick = function(){
-                    skillclick = false
+                // about.onclick = function(){
+                //     skillclick = false
 
-                    about_modal.style.display = "flex";  
+                //     about_modal.style.display = "flex";  
 
-                    skills_modal.style.display = "none";  
-                    contact_modal.style.display = "none"; 
-                    dj_modal.style.display = "none"; 
-                    py_modal.style.display = "none";  
-                    js_modal.style.display = "none";  
-                    node_modal.style.display = "none"; 
-                    html_modal.style.display = "none"; 
-                }
+                //     skills_modal.style.display = "none";  
+                //     contact_modal.style.display = "none"; 
+                //     dj_modal.style.display = "none"; 
+                //     py_modal.style.display = "none";  
+                //     js_modal.style.display = "none";  
+                //     node_modal.style.display = "none"; 
+                //     html_modal.style.display = "none"; 
+                // }
 
-                dj.onclick = function(){
-                    skillclick = false
+                // dj.onclick = function(){
+                //     skillclick = false
 
-                    dj_modal.style.display = "flex";  
+                //     dj_modal.style.display = "flex";  
 
-                    skills_modal.style.display = "none";  
-                    contact_modal.style.display = "none"; 
-                    about_modal.style.display = "none";  
-                    py_modal.style.display = "none";  
-                    js_modal.style.display = "none";  
-                    node_modal.style.display = "none"; 
-                    html_modal.style.display = "none"; 
-                }
+                //     skills_modal.style.display = "none";  
+                //     contact_modal.style.display = "none"; 
+                //     about_modal.style.display = "none";  
+                //     py_modal.style.display = "none";  
+                //     js_modal.style.display = "none";  
+                //     node_modal.style.display = "none"; 
+                //     html_modal.style.display = "none"; 
+                // }
 
-                py.onclick = function(){
-                    skillclick = false
+                // py.onclick = function(){
+                //     skillclick = false
 
-                    document.querySelector("#py_modal").style.display = "flex"; 
+                //     document.querySelector("#py_modal").style.display = "flex"; 
 
-                    skills_modal.style.display = "none";  
-                    contact_modal.style.display = "none"; 
-                    about_modal.style.display = "none";  
-                    dj_modal.style.display = "none"; 
-                    js_modal.style.display = "none";  
-                    node_modal.style.display = "none"; 
-                    html_modal.style.display = "none"; 
-                }
+                //     skills_modal.style.display = "none";  
+                //     contact_modal.style.display = "none"; 
+                //     about_modal.style.display = "none";  
+                //     dj_modal.style.display = "none"; 
+                //     js_modal.style.display = "none";  
+                //     node_modal.style.display = "none"; 
+                //     html_modal.style.display = "none"; 
+                // }
 
-                js.onclick = function(){
-                    skillclick = false
+                // js.onclick = function(){
+                //     skillclick = false
 
-                    js_modal.style.display = "flex";  
+                //     js_modal.style.display = "flex";  
 
-                    skills_modal.style.display = "none";  
-                    contact_modal.style.display = "none"; 
-                    about_modal.style.display = "none";  
-                    dj_modal.style.display = "none"; 
-                    py_modal.style.display = "none";  
-                    node_modal.style.display = "none"; 
-                    html_modal.style.display = "none"; 
-                }
+                //     skills_modal.style.display = "none";  
+                //     contact_modal.style.display = "none"; 
+                //     about_modal.style.display = "none";  
+                //     dj_modal.style.display = "none"; 
+                //     py_modal.style.display = "none";  
+                //     node_modal.style.display = "none"; 
+                //     html_modal.style.display = "none"; 
+                // }
 
-                node.onclick = function(){
-                    skillclick = false
+                // node.onclick = function(){
+                //     skillclick = false
 
-                    node_modal.style.display = "flex";  
+                //     node_modal.style.display = "flex";  
 
-                    skills_modal.style.display = "none";  
-                    contact_modal.style.display = "none"; 
-                    about_modal.style.display = "none";  
-                    dj_modal.style.display = "none"; 
-                    py_modal.style.display = "none";  
-                    js_modal.style.display = "none";  
-                    html_modal.style.display = "none";
-                }
+                //     skills_modal.style.display = "none";  
+                //     contact_modal.style.display = "none"; 
+                //     about_modal.style.display = "none";  
+                //     dj_modal.style.display = "none"; 
+                //     py_modal.style.display = "none";  
+                //     js_modal.style.display = "none";  
+                //     html_modal.style.display = "none";
+                // }
 
-                html_.onclick = function(){
-                    skillclick = false
+                // html_.onclick = function(){
+                //     skillclick = false
 
-                    html_modal.style.display = "flex";  
+                //     html_modal.style.display = "flex";  
 
-                    skills_modal.style.display = "none";  
-                    contact_modal.style.display = "none"; 
-                    about_modal.style.display = "none";  
-                    dj_modal.style.display = "none"; 
-                    py_modal.style.display = "none";  
-                    js_modal.style.display = "none";  
-                    node_modal.style.display = "none"; 
-                }
+                //     skills_modal.style.display = "none";  
+                //     contact_modal.style.display = "none"; 
+                //     about_modal.style.display = "none";  
+                //     dj_modal.style.display = "none"; 
+                //     py_modal.style.display = "none";  
+                //     js_modal.style.display = "none";  
+                //     node_modal.style.display = "none"; 
+                // }
 
 
-                //image slide shows    
+                // //image slide shows    
 
-                //header image slidewhow
-                var i = 0;
-                var images = [];
-                var time = 5000;
+                // //header image slidewhow
+                // var i = 0;
+                // var images = [];
+                // var time = 5000;
 
-                images[0] = "{% static 'home/image1.jpg' %}";
-                images[1] = "{% static 'home/image2.jpg' %}";
-                images[2] = "{% static 'home/image3.jpg' %}";
+                // images[0] = "{% static 'home/image1.jpg' %}";
+                // images[1] = "{% static 'home/image2.jpg' %}";
+                // images[2] = "{% static 'home/image3.jpg' %}";
 
-                function imgchange(){
-                    document.slide.src = images[i];
+                // function imgchange(){
+                //     document.slide.src = images[i];
 
-                    if(i < images.length - 1){
-                        i++;
-                    } else {
-                        i = 0;
-                    }
+                //     if(i < images.length - 1){
+                //         i++;
+                //     } else {
+                //         i = 0;
+                //     }
                     
-                    setTimeout("imgchange()", time);
-                }
+                //     setTimeout("imgchange()", time);
+                // }
 
-                window.onload = imgchange();
+                // window.onload = imgchange();
 
 
-                //django constantine project img slideshows
-                var c = 0;
-                var c_images = [];
-                var c_time = 4000;
+                // //django constantine project img slideshows
+                // var c = 0;
+                // var c_images = [];
+                // var c_time = 4000;
 
-                c_images[0] = "{% static 'home/const_pre.png' %}";
-                c_images[1] = "{% static 'home/const_pre2.png' %}";
-                c_images[2] = "{% static 'home/const_pre3.png' %}";
-                c_images[3] = "{% static 'home/const_pre4.png' %}";
+                // c_images[0] = "{% static 'home/const_pre.png' %}";
+                // c_images[1] = "{% static 'home/const_pre2.png' %}";
+                // c_images[2] = "{% static 'home/const_pre3.png' %}";
+                // c_images[3] = "{% static 'home/const_pre4.png' %}";
 
-                function c_imgchange(){
-                    document.constantine.src = c_images[c];
+                // function c_imgchange(){
+                //     document.constantine.src = c_images[c];
 
-                    if(c < c_images.length - 1){
-                        c++;
-                    } else {
-                        c = 0;
-                    }
+                //     if(c < c_images.length - 1){
+                //         c++;
+                //     } else {
+                //         c = 0;
+                //     }
                     
-                    setTimeout("c_imgchange()", c_time);
-                }
+                //     setTimeout("c_imgchange()", c_time);
+                // }
 
-                window.onload = c_imgchange();
+                // window.onload = c_imgchange();
 
 
-                //python farming project img slideshows
-                var f = 0;
-                var farm_images = [];
-                var farm_time = 6000;
+                // //python farming project img slideshows
+                // var f = 0;
+                // var farm_images = [];
+                // var farm_time = 6000;
 
-                farm_images[0] = "{% static 'home/farm8.png' %}";
-                farm_images[1] = "{% static 'home/farm7.png' %}";
-                farm_images[2] = "{% static 'home/farm2.png' %}";
-                farm_images[3] = "{% static 'home/farm3.png' %}";
-                farm_images[4] = "{% static 'home/farm4.png' %}";
-                farm_images[5] = "{% static 'home/farm5.png' %}";
-                farm_images[6] = "{% static 'home/farm6.png' %}";
+                // farm_images[0] = "{% static 'home/farm8.png' %}";
+                // farm_images[1] = "{% static 'home/farm7.png' %}";
+                // farm_images[2] = "{% static 'home/farm2.png' %}";
+                // farm_images[3] = "{% static 'home/farm3.png' %}";
+                // farm_images[4] = "{% static 'home/farm4.png' %}";
+                // farm_images[5] = "{% static 'home/farm5.png' %}";
+                // farm_images[6] = "{% static 'home/farm6.png' %}";
 
-                function farm_imgchange(){
-                    document.farm.src = farm_images[f];
+                // function farm_imgchange(){
+                //     document.farm.src = farm_images[f];
 
-                    if(f < farm_images.length - 1){
-                        f++;
-                    } else {
-                        f = 0;
-                    }
+                //     if(f < farm_images.length - 1){
+                //         f++;
+                //     } else {
+                //         f = 0;
+                //     }
                     
-                    setTimeout("farm_imgchange()", farm_time);
-                }
+                //     setTimeout("farm_imgchange()", farm_time);
+                // }
 
-                window.onload = farm_imgchange();
+                // window.onload = farm_imgchange();
 
-                //python web scraping project img slideshows
-                var s = 0;
-                var scrape_images = [];
-                var scrape_time = 6000;
+                // //python web scraping project img slideshows
+                // var s = 0;
+                // var scrape_images = [];
+                // var scrape_time = 6000;
 
-                scrape_images[0] = "{% static 'home/farm8.png' %}";
-                scrape_images[1] = "{% static 'home/farm7.png' %}";
-                scrape_images[2] = "{% static 'home/farm2.png' %}";
-                scrape_images[3] = "{% static 'home/farm3.png' %}";
-                scrape_images[4] = "{% static 'home/farm4.png' %}";
-                scrape_images[5] = "{% static 'home/farm5.png' %}";
-                scrape_images[6] = "{% static 'home/farm6.png' %}";
+                // scrape_images[0] = "{% static 'home/farm8.png' %}";
+                // scrape_images[1] = "{% static 'home/farm7.png' %}";
+                // scrape_images[2] = "{% static 'home/farm2.png' %}";
+                // scrape_images[3] = "{% static 'home/farm3.png' %}";
+                // scrape_images[4] = "{% static 'home/farm4.png' %}";
+                // scrape_images[5] = "{% static 'home/farm5.png' %}";
+                // scrape_images[6] = "{% static 'home/farm6.png' %}";
 
-                function scrape_imagechange(){
-                    document.scrape.src = scrape_images[s];
+                // function scrape_imagechange(){
+                //     document.scrape.src = scrape_images[s];
 
-                    if(s < scrape_images.length - 1){
-                        s++;
-                    } else {
-                        s = 0;
-                    }
+                //     if(s < scrape_images.length - 1){
+                //         s++;
+                //     } else {
+                //         s = 0;
+                //     }
                     
-                    setTimeout("scrape_imagechange()", scrape_time);
-                }
+                //     setTimeout("scrape_imagechange()", scrape_time);
+                // }
 
-                window.onload = scrape_imagechange();
+                // window.onload = scrape_imagechange();
 
 
-                //JavaScript project img slideshows
-                var a = 0;
-                var atm_images = [];
-                var atm_time = 5000;
+                // //JavaScript project img slideshows
+                // var a = 0;
+                // var atm_images = [];
+                // var atm_time = 5000;
 
-                atm_images[0] = "{% static 'home/atm.png' %}";
-                atm_images[1] = "{% static 'home/atm2.png' %}";
-                atm_images[2] = "{% static 'home/atm3.png' %}";
+                // atm_images[0] = "{% static 'home/atm.png' %}";
+                // atm_images[1] = "{% static 'home/atm2.png' %}";
+                // atm_images[2] = "{% static 'home/atm3.png' %}";
               
 
-                function atm_imgchange(){
-                    document.atm.src = atm_images[a];
+                // function atm_imgchange(){
+                //     document.atm.src = atm_images[a];
 
-                    if(a < atm_images.length - 1){
-                        a++;
-                    } else {
-                        a = 0;
-                    }
+                //     if(a < atm_images.length - 1){
+                //         a++;
+                //     } else {
+                //         a = 0;
+                //     }
                     
-                    setTimeout("atm_imgchange()", atm_time);
-                }
+                //     setTimeout("atm_imgchange()", atm_time);
+                // }
 
-                window.onload = atm_imgchange();
+                // window.onload = atm_imgchange();
 
-                //node img slideshows
-                var n = 0;
-                var sms_images = [];
-                var sms_time = 6000;
+                // //node img slideshows
+                // var n = 0;
+                // var sms_images = [];
+                // var sms_time = 6000;
 
-                sms_images[0] = "{% static 'home/sms.png' %}";
-                sms_images[1] = "{% static 'home/sms2.png' %}";
+                // sms_images[0] = "{% static 'home/sms.png' %}";
+                // sms_images[1] = "{% static 'home/sms2.png' %}";
 
-                function sms_imgchange(){
-                    document.sms.src = sms_images[p];
+                // function sms_imgchange(){
+                //     document.sms.src = sms_images[p];
 
-                    if(n < sms_images.length - 1){
-                        n++;
-                    } else {
-                        n = 0;
-                    }
+                //     if(n < sms_images.length - 1){
+                //         n++;
+                //     } else {
+                //         n = 0;
+                //     }
                     
-                    setTimeout("sms_imgchange()", sms_time);
-                }
+                //     setTimeout("sms_imgchange()", sms_time);
+                // }
 
-                window.onload = sms_imgchange();
+                // window.onload = sms_imgchange();
 
-                //HTML img slideshows
-                var p = 0;
-                var piz_images = [];
-                var piz_time = 4000;
+                // //HTML img slideshows
+                // var p = 0;
+                // var piz_images = [];
+                // var piz_time = 4000;
                 
-                piz_images[0] = "{% static 'home/piz.png' %}";
-                piz_images[1] = "{% static 'home/piz2.png' %}";
+                // piz_images[0] = "{% static 'home/piz.png' %}";
+                // piz_images[1] = "{% static 'home/piz2.png' %}";
 
-                function piz_imgchange(){
-                    document.pizza.src = piz_images[p];
+                // function piz_imgchange(){
+                //     document.pizza.src = piz_images[p];
 
-                    if(p < piz_images.length - 1){
-                        p++;
-                    } else {
-                        p = 0;
-                    }
+                //     if(p < piz_images.length - 1){
+                //         p++;
+                //     } else {
+                //         p = 0;
+                //     }
                     
-                    setTimeout("piz_imgchange()", piz_time);
-                }
+                //     setTimeout("piz_imgchange()", piz_time);
+                // }
 
-                window.onload = piz_imgchange();
+                // window.onload = piz_imgchange();
                                   
             </script>
     </body>
