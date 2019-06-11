@@ -16,16 +16,39 @@
                 </header>
 
                 <div id="nav_bar">
-                    <button class="nav_btn">About</button>
-                    <button class="nav_btn">Rules</button>
-                    <button class="nav_btn">Contact</button>
+                    <button id="about" class="nav_btn">About</button>
+                    <button id="rules"class="nav_btn">Rules</button>
+                    <button id="contact" class="nav_btn">Contact</button>
                 </div>
             
                 <div id="content_home">
                 </div>
 
+                <div id="content_rules">
+                </div>
+
+                <div id="content_about">
+                </div>
+
             <!-- JAVASCRIPT -->
             <script>
+
+                let about_btn = document.querySelector('#about');
+                let rules_btn = document.querySelector('#rules');
+                let contant_btn = document.querySelector('#contact');
+
+                let home = document.querySelector('#content_home')
+                let rules = document.querySelector('#content_rules')
+                let about = document.querySelector('#content_about')
+
+                rules_btn.onlick = function(){
+
+                    rules.style.display = "flex";  
+                    
+                    home.style.display = "none"; 
+                    about.style.display = "none"; 
+                }
+
      
                                   
             </script>
