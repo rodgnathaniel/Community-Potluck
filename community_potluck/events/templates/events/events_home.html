@@ -16,6 +16,7 @@
                 </header>
 
                 <div id="nav_bar">
+                    <button id="home" class="nav_btn">Home</button>
                     <button id="about" class="nav_btn">About</button>
                     <button id="rules" class="nav_btn">Rules</button>
                     <button id="contact" class="nav_btn">Contact</button>
@@ -30,16 +31,41 @@
                 <div id="content_about">
                 </div>
 
+                <div id="content_contact">
+                </div>
+
             <!-- JAVASCRIPT -->
             <script>
-
+                
+                // declaring buttons
+                let home_btn = document.querySelector('#home');
                 let about_btn = document.querySelector('#about');
                 let rules_btn = document.querySelector('#rules');
                 let contant_btn = document.querySelector('#contact');
 
+                // declaring page content sections
                 let home = document.querySelector('#content_home')
                 let rules = document.querySelector('#content_rules')
                 let about = document.querySelector('#content_about')
+                let contact = document.querySelector('#content_contact')
+
+                home_btn.onclick = function(){
+
+                    home.style.display = "flex";  
+
+                    rules.style.display = "none"; 
+                    about.style.display = "none"; 
+                    contact.style.display = "none"; 
+                }
+
+                about_btn.onclick = function(){
+
+                    about.style.display = "flex";  
+
+                    home.style.display = "none"; 
+                    rules.style.display = "none"; 
+                    contact.style.display = "none"; 
+                }
 
                 rules_btn.onclick = function(){
 
@@ -47,13 +73,15 @@
 
                     home.style.display = "none"; 
                     about.style.display = "none"; 
+                    contact.style.display = "none"; 
                 }
-                
-                rules_btn.onclick = function(){
 
-                    rules.style.display = "flex";  
+                contact_btn.onclick = function(){
+
+                    contact.style.display = "flex";  
 
                     home.style.display = "none"; 
+                    rules.style.display = "none"; 
                     about.style.display = "none"; 
                 }
 
