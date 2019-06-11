@@ -17,7 +17,7 @@
 
                 <div id="nav_bar">
                     <button id="about" class="nav_btn">About</button>
-                    <button id="rules"class="nav_btn">Rules</button>
+                    <button id="rules" class="nav_btn">Rules</button>
                     <button id="contact" class="nav_btn">Contact</button>
                 </div>
             
@@ -41,10 +41,18 @@
                 let rules = document.querySelector('#content_rules')
                 let about = document.querySelector('#content_about')
 
-                rules_btn.onlick = function(){
+                rules_btn.onclick = function(){
 
                     rules.style.display = "flex";  
-                    
+
+                    home.style.display = "none"; 
+                    about.style.display = "none"; 
+                }
+                
+                rules_btn.onclick = function(){
+
+                    rules.style.display = "flex";  
+
                     home.style.display = "none"; 
                     about.style.display = "none"; 
                 }
