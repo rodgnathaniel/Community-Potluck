@@ -74,6 +74,27 @@ header{
 }
 
 #content_home{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    background-color: rgba(	255,248,220,.7);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.6);
+    border-radius: 0px 0px 11px 11px;
+    z-index: 1;
+}
+#content_about{
+    display: none;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    background-color: rgba(	255,248,220,.7);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.6);
+    border-radius: 0px 0px 11px 11px;
+    z-index: 1;
+}
+#content_rules{
+    display: none;
     width: 80%;
     height: 100%;
     margin-left: 10%;
