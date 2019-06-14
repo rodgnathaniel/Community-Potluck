@@ -1,0 +1,97 @@
+{% load static %}
+
+<html>
+    <body>
+        <head>
+
+            <link rel="stylesheet" type="text/css" href="{% static 'events/css/main.css' %}">
+
+        </head>
+
+                <header>
+                    <div id="title_bar">
+                        <h1 id="title_bar_txt">Portland Potluck</h1>
+                        <!-- <img src="{% static 'events/rose.jpg' %}" width="100px" height="100px"> -->
+                    </div>
+                </header>
+
+                <div id="nav_bar">
+                    <button id="home" class="nav_btn">Home</button>
+                    <button id="about" class="nav_btn">About</button>
+                    <button id="rules" class="nav_btn">Rules</button>
+                    <button id="contact" class="nav_btn">Contact</button>
+                </div>
+            
+                <div id="content_home">
+                </div>
+
+                <div id="content_rules">
+                </div>
+
+                <div id="content_about">
+                    <span> Portland Potluck is a local community gathering introduced to Portland Oregon in 2019 f
+                        or the purose of promoting cross cultural meals, welcoming new comers and giving people a 
+                        peaceful place to socialize.
+                    </span>
+                    <img>
+                </div>
+
+                <div id="content_contact">
+                </div>
+
+            <!-- JAVASCRIPT -->
+            <script>
+                
+                // declaring buttons
+                let home_btn = document.querySelector('#home');
+                let about_btn = document.querySelector('#about');
+                let rules_btn = document.querySelector('#rules');
+                let contact_btn = document.querySelector('#contact');
+
+                // declaring page content sections
+                let home = document.querySelector('#content_home')
+                let rules = document.querySelector('#content_rules')
+                let about = document.querySelector('#content_about')
+                let contact = document.querySelector('#content_contact')
+
+                home_btn.onclick = function(){
+
+                    home.style.display = "flex";  
+
+                    rules.style.display = "none"; 
+                    about.style.display = "none"; 
+                    contact.style.display = "none"; 
+                }
+
+                about_btn.onclick = function(){
+
+                    about.style.display = "flex";  
+
+                    home.style.display = "none"; 
+                    rules.style.display = "none"; 
+                    contact.style.display = "none"; 
+                }
+
+                rules_btn.onclick = function(){
+
+                    rules.style.display = "flex";  
+
+                    home.style.display = "none"; 
+                    about.style.display = "none"; 
+                    contact.style.display = "none"; 
+                }
+
+                contact_btn.onclick = function(){
+
+                    contact.style.display = "flex";  
+
+                    home.style.display = "none"; 
+                    rules.style.display = "none"; 
+                    about.style.display = "none"; 
+                }
+
+     
+                                  
+            </script>
+    </body>
+</html>
