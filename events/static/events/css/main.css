@@ -3,7 +3,7 @@
 
 /* BACKGROUND IMAGE */
 body {
-    background-image: src;  
+    background-image:url(/static/events/flower_pattern.jpg);   
 }
 
 header{
